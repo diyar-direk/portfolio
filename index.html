@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-theme="light">
+    <!-- start setting  -->
+    <aside class="setting">
+      <div class="gear"><i class="fa-solid fa-gear"></i></div>
+      <div class="box">
+        <h3>page color</h3>
+        <ul class="d-flex d-center">
+          <li data-color="#ff9800" class="active"></li>
+          <li data-color="#00BCD4"></li>
+          <li data-color="#009688"></li>
+          <li data-color="#bc1004"></li>
+          <li data-color="#4CAF50"></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h4>change background</h4>
+        <div class="select">
+          <div class="yes background active" data-change="yes">yes</div>
+          <div class="no background" data-change="no">no</div>
+        </div>
+      </div>
+      <div class="box">
+        <h4>fixed navbar</h4>
+        <div class="select">
+          <div class="yes fixed" data-position="fixed">yes</div>
+          <div class="no fixed active" data-position="absolute">no</div>
+        </div>
+      </div>
+      <div class="box">
+        <h4>show popup</h4>
+        <div class="select">
+          <div class="yes display active" data-display="block">yes</div>
+          <div class="no display" data-display="none">no</div>
+        </div>
+      </div>
+      <div class="change light flex-center"></div>
+      <div class="button">reset options</div>
+    </aside>
+    <div class="popup">
+      <a href="#home" data-href="home" class="active"></a>
+      <a href="#about" data-href="about me"></a>
+      <a href="#skills" data-href="skills"></a>
+      <a href="#testimonials" data-href="testimonials"></a>
+      <a href="#gallery" data-href="gallery"></a>
+      <a href="#projects" data-href="my projects"></a>
+      <a href="#contact" data-href="contact"></a>
+    </div>
+    <!-- end setting  -->
+
+    <!-- start landing  -->
+    <main class="landing align-center d-center" id="home" data-href="home">
+      <div class="overlay"></div>
+      <nav class="flex-center">
+        <div class="main-width d-flex">
+          <h1>special Design</h1>
+          <div class="link flex-grow align-center">
+            <a href="#home" data-href="home" class="links active">home</a>
+            <a href="#about" data-href="about me" class="links">about me</a>
+            <a href="#skills" data-href="skills" class="links">skills</a>
+            <a href="#testimonials" data-href="testimonials" class="links"
+              >Testimonials</a
+            >
+            <a href="#gallery" data-href="gallery" class="links">gallery</a>
+            <a href="#projects" data-href="my projects" class="links"
+              >my projects</a
+            >
+            <a href="#contact" data-href="contact" class="links">contact</a>
+          </div>
+          <div class="menu align-center flex-grow">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="main-width align-center">
+        <h1>welcome to my <span> special Design</span> page</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+          totam dolores quae obcaecati porro quis aut alias voluptatum, ipsa
+          libero incidunt optio quibusdam delectus ut recusandae vel fugiat
+          voluptatem excepturi!
+        </p>
+      </div>
+    </main>
+    <!-- end landing  -->
+
+    <!-- start about  -->
+
+    <main class="container flex-center" id="about" data-href="about me">
+      <div class="main-width">
+        <div class="d-flex">
+          <article class="photo">
+            <img
+              src="img/WhatsApp Image 2023-12-13 at 17.28.58_7a9ab194.jpg"
+              alt=""
+            />
+          </article>
+          <article class="text">
+            <h1 class="title" data-fill="about me">About me</h1>
+            <h2>who am i?</h2>
+            <h2>i'm <span>front end developer</span></h2>
+            <p>
+              my name is diyar direki i'm 20 years old i'm from syria rojava
+              qamishlo i'm a second year informatict engineering studant in CPU
+              i'm front end developer you can talk to me through:
+            </p>
+            <div class="contact">
+              <a
+                href="https://www.facebook.com/diyar.direki.9?mibextid=ZbWKwL"
+                class="facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://instagram.com/diyar_direk?igshid=NzZlODBkYWE4Ng=="
+                class="instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="http://diyar135.sarhne.com" class="mail"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+              <a href="#" class="github">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- end about  -->
+
+    <!-- start skills -->
+
+    <main id="skills" data-href="skills" class="container section flex-center">
+      <div class="main-width flex-center">
+        <h1 class="title" data-fill="skills">Skills</h1>
+      </div>
+      <div class="main-width">
+        <div class="align-center">
+          <article class="skills">
+            <div class="d-flex align-center">
+              <i class="fa-brands fa-html5"></i>
+              <h2>html</h2>
+            </div>
+            <div class="skil">
+              <span data-width="90%"></span>
+            </div>
+
+            <div class="d-flex align-center">
+              <i class="fa-brands fa-css3"></i>
+              <h2>css</h2>
+            </div>
+            <div class="skil">
+              <span data-width="80%"></span>
+            </div>
+
+            <div class="d-flex align-center">
+              <i class="fa-brands fa-js"></i>
+              <h2>javascript</h2>
+            </div>
+            <div class="skil">
+              <span data-width="70%"></span>
+            </div>
+
+            <div class="d-flex align-center">
+              <i class="fa-brands fa-react"></i>
+              <h2>react</h2>
+            </div>
+            <div class="skil">
+              <span data-width="60%"></span>
+            </div>
+          </article>
+          <article class="photo">
+            <img src="img/settings.png" alt="" />
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- end skills -->
+
+    <!-- start testimonials -->
+
+    <main
+      id="testimonials"
+      class="container flex-center"
+      data-href="testimonials"
+    >
+      <h1 class="title" data-fill="testimonials">Testimonials</h1>
+      <div class="main-width">
+        <div class="rank">developers</div>
+        <div class="left">
+          <div>
+            <div class="d-flex">
+              <img src="img/avatar-01.png" class="img" />
+              <div class="flex-grow">
+                <h2>diyar direki</h2>
+                <p>frontend developer</p>
+                <div class="stars">
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, quos, magni saepe nemo possimus enim sunt sint nobis
+              ullam
+            </p>
+          </div>
+        </div>
+
+        <div class="right">
+          <div>
+            <div class="d-flex">
+              <img src="img/avatar-02.png" class="img" />
+              <div class="flex-grow">
+                <h2>bashir omer</h2>
+                <p>react developer</p>
+                <div class="stars">
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star black"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, quos, magni saepe nemo possimus enim sunt sint nobis
+              ullam
+            </p>
+          </div>
+        </div>
+
+        <div class="rank">Designer</div>
+        <div class="left">
+          <div>
+            <div class="d-flex">
+              <img src="img/avatar-03.png" class="img" />
+              <div class="flex-grow">
+                <h2>rawan dawalibi</h2>
+                <p>ui ux Designer</p>
+                <div class="stars">
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star black"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, quos, magni saepe nemo possimus enim sunt sint nobis
+              ullam
+            </p>
+          </div>
+        </div>
+
+        <div class="right">
+          <div>
+            <div class="d-flex">
+              <img src="img/avatar-04.png" class="img" />
+              <div class="flex-grow">
+                <h2>bextiyar hessan</h2>
+                <p>photoshob Designer</p>
+                <div class="stars">
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                  <i class="filled fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, quos, magni saepe nemo possimus enim sunt sint nobis
+              ullam
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- end testimonials -->
+
+    <!-- start gallery -->
+    <main
+      id="gallery"
+      data-href="gallery"
+      class="container section flex-center"
+    >
+      <h1 data-fill="gallery" class="title">Gallery</h1>
+      <div class="main-width">
+        <div class="grid">
+          <div class="img">
+            <img src="img/1.jpg" alt="image one" loading="lazy" />
+          </div>
+          <div class="img">
+            <img src="img/2.jpg" alt="image two" loading="lazy" />
+          </div>
+          <div class="img">
+            <img src="img/3.jpg" alt="image three" loading="lazy" />
+          </div>
+          <div class="img">
+            <img src="img/4.jpg" alt="image four" loading="lazy" />
+          </div>
+          <div class="img">
+            <img src="img/5.jpg" alt="image five" loading="lazy" />
+          </div>
+          <div class="img">
+            <img src="img/6.jpg" alt="image six" loading="lazy" />
+          </div>
+          <div class="img">
+            <img src="img/7.jpg" alt="image seven" loading="lazy" />
+          </div>
+          <div class="img">
+            <img src="img/8.jpg" alt="image eight" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end gallery -->
+
+    <!-- start my projects -->
+    <main class="container flex-center" id="projects" data-href="my projects">
+      <h1 class="title" data-fill="my projects">My Projects</h1>
+      <div class="main-width">
+        <div class="grid">
+          <div class="project">
+            <a href="" target="_blank">
+              <img src="img/img1.png" alt="" loading="lazy" />
+            </a>
+            <div class="info">
+              <span>creat dashboard using html and css</span>
+              <a href="#" target="_blank">show project</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <a href="" target="_blank">
+              <img src="img/img2.png" alt="" loading="lazy" />
+            </a>
+            <div class="info">
+              <span>creat portfolio using html and css</span>
+              <a href="#" target="_blank">show project</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <a href="" target="_blank">
+              <img src="img/img3.png" alt="" loading="lazy" />
+            </a>
+            <div class="info">
+              <span>creat portfolio using html and css</span>
+              <a href="#" target="_blank">show project</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <a href="" target="_blank">
+              <img src="img/img4.png" alt="" loading="lazy" />
+            </a>
+            <div class="info">
+              <span>creat quizz app using javascript with api</span>
+              <a href="#" target="_blank">show project</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <a href="" target="_blank">
+              <img src="img/img5.png" alt="" loading="lazy" />
+            </a>
+            <div class="info">
+              <span>creat to do list using javascript with localstorg</span>
+              <a href="#" target="_blank">show project</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <a href="" target="_blank">
+              <img src="img/img6.png" alt="" loading="lazy" />
+            </a>
+            <div class="info">
+              <span>creat typeing speed game using javascript </span>
+              <a href="#" target="_blank">show project</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <a href="" target="_blank">
+              <img src="img/img7.png" alt="" loading="lazy" />
+            </a>
+            <div class="info">
+              <span>creat typeing speed game using javascript </span>
+              <a href="#" target="_blank">show project</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <a href="" target="_blank">
+              <img src="img/img8.png" alt="" loading="lazy" />
+            </a>
+            <div class="info">
+              <span>creat memory image game using javascript </span>
+              <a href="#" target="_blank">show project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end my projects  -->
+    <main
+      class="container flex-center section"
+      data-href="contact"
+      id="contact"
+    >
+      <h1 class="title" data-fill="contact">Contact</h1>
+      <div class="main-width flex-center">
+        <form action="">
+          <div>
+            <input type="text" required placeholder="write your first name" />
+            <input type="text" placeholder="write your phone" />
+            <input type="text" required placeholder="write your email" />
+            <input type="text" placeholder="write your adresses" />
+          </div>
+          <div>
+            <textarea placeholder="write your message"></textarea>
+            <input type="submit" value="send" />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- start footer  -->
+
+    <footer>© made by <span>diyar</span> in 2023</footer>
+
+    <!-- end footer  -->
+    <div class="loader align-center">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <script src="myproject.js"></script>
+  </body>
+</html>
