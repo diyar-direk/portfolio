@@ -171,6 +171,24 @@ setInterval(() => {
 
 // end about
 
+// start skills
+
+let dots = document.querySelectorAll("#skills .dot > span");
+let photos = document.querySelectorAll("#skills .photo ");
+dots.forEach((e) => {
+  e.addEventListener("click", (ele) => {
+    dots.forEach((e) => {
+      e.classList.remove("active");
+    });
+    ele.target.classList.add("active");
+    photos.forEach((e) => {
+      e.classList.remove("active");
+    });
+    photos[ele.target.dataset.index].classList.add("active");
+  });
+});
+// end skills
+
 // start gallery
 
 let images = document.querySelectorAll("#gallery .img img");
