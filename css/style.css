@@ -407,6 +407,50 @@ h1.title::before {
 h1.title:hover::before {
   width: 100%;
 }
+.subscribe {
+  position: absolute;
+  bottom: 200px;
+  padding: 20px 40px;
+  background-color: #00000042;
+  border-radius: 50px;
+  color: white;
+  gap: 20px;
+  width: 60%;
+}
+.subscribe > label {
+  cursor: text;
+  background: #54545447;
+  padding: 10px 20px;
+  border-radius: 50px;
+  flex: 1;
+}
+.subscribe > label input {
+  background: transparent;
+  border: none;
+  outline: none;
+  caret-color: var(--main-color);
+  color: white;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.subscribe > label input::placeholder {
+  color: rgba(255, 255, 255, 0.681);
+  transition: 0.4s;
+}
+.subscribe > label input:focus::placeholder {
+  opacity: 0;
+}
+.subscribe > input {
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background: var(--main-color);
+  letter-spacing: 3px;
+}
 /* start about   */
 
 main#about .photo::before {
@@ -920,6 +964,10 @@ footer span {
   h1.title {
     font-size: 36px;
   }
+  .subscribe {
+    padding: 15px 25px;
+    width: 70%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1004,6 +1052,15 @@ footer span {
   #contact form > div input[type="text"] {
     height: 45px;
   }
+  .subscribe > label input {
+    font-size: 16px;
+  }
+  .subscribe > input {
+    font-size: 15px;
+  }
+  .subscribe {
+    padding: 15px 15px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -1084,6 +1141,19 @@ footer span {
   body[data-theme="dark"] #testimonials > .main-width > div.left > div::after,
   body[data-theme="dark"] #testimonials > .main-width > div.right > div::after {
     border-color: transparent transparent var(--background-color) transparent;
+  }
+  .subscribe {
+    flex-direction: column;
+    padding: 0;
+    background: transparent;
+    width: 65%;
+    gap: 15px;
+  }
+  .subscribe > label,
+  .subscribe > input {
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
   }
 }
 
@@ -1173,6 +1243,9 @@ footer span {
   .loader span {
     width: 35px;
     height: 35px;
+  }
+  .subscribe {
+    width: 80%;
   }
 }
 @media (max-width: 390px) {
@@ -1289,5 +1362,13 @@ footer span {
   footer {
     font-size: 13px;
     padding: 15px 0;
+  }
+  .subscribe {
+    width: 90%;
+  }
+  .subscribe > label,
+  .subscribe > input {
+    padding: 8px 10px;
+    font-size: 14px;
   }
 }
