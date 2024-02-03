@@ -8,6 +8,60 @@
 *:not(.landing) {
   transition: 0.4s;
 }
+/*add animation*/
+.animation-header {
+  position: relative;
+  animation: slidedown 1s ease-in;
+}
+@keyframes slidedown {
+  0% {
+    opacity: 0;
+    top: -80px;
+  }
+  50% {
+    top: 20px;
+  }
+  80% {
+    top: -30px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+.animation-left {
+  position: relative;
+  animation: slidedown 1s ease-in;
+}
+.animation-opacity {
+  animation: alternate 2s ease-in-out opacity;
+}
+@keyframes slidedown {
+  0% {
+    opacity: 0;
+    left: -80px;
+  }
+  50% {
+    left: 20px;
+  }
+  80% {
+    left: -30px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*add animation*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -101,7 +155,16 @@ ul {
   justify-content: center;
 }
 /* end my framework  */
-
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #292929;
+}
 /* stasrt settings */
 
 aside {

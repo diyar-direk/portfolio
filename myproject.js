@@ -35,6 +35,18 @@ if (localStorage.getItem("color")) {
 }
 
 // end lis
+// make the header animation
+let headerLink = document.querySelectorAll(".links");
+let linkCounter = 0;
+let headerInterval = setInterval((e) => {
+  if (linkCounter < headerLink.length) {
+    headerLink[linkCounter++].classList.add("animation-header");
+  } else if (linkCounter >= headerLink.length) {
+    clearInterval(headerInterval);
+  }
+}, 100);
+
+//end make the header animation
 
 // start random background
 
