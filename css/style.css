@@ -504,7 +504,7 @@ h1.title:hover::before {
 .subscribe > label input:focus::placeholder {
   opacity: 0;
 }
-.subscribe > input {
+.subscribe > .input {
   padding: 10px 20px;
   border-radius: 50px;
   font-size: 17px;
@@ -967,10 +967,9 @@ body[data-theme="dark"] #contact::before {
   background-color: var(--background-color);
   color: var(--font-color);
 }
-#contact form > div input[type="submit"] {
+#contact form > div .submit {
   background-color: var(--main-color);
   padding: 5px 10px;
-  text-align: center;
   margin-bottom: 10px;
   border: none;
   outline: none;
@@ -1005,7 +1004,24 @@ footer span {
 }
 
 /* end footer  */
-
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 156%;
+  background: #ffffffbf;
+  transform: skewX(-50deg);
+  filter: blur(6px);
+  left: -100%;
+  transition: 0.5s;
+}
+.btn:hover::before {
+  left: 110%;
+}
 /* start loader */
 
 .loader {
@@ -1177,7 +1193,7 @@ footer span {
   .subscribe > label input {
     font-size: 16px;
   }
-  .subscribe > input {
+  .subscribe > .input {
     font-size: 15px;
   }
   .subscribe {
@@ -1276,7 +1292,7 @@ footer span {
     gap: 15px;
   }
   .subscribe > label,
-  .subscribe > input {
+  .subscribe > .input {
     border-radius: 15px;
     padding: 10px;
     font-size: 15px;
@@ -1363,7 +1379,7 @@ footer span {
     margin: 10px 0;
   }
   #contact form > div input[type="text"],
-  #contact form > div input[type="submit"] {
+  #contact form > div .submit {
     height: 40px;
   }
   footer {
@@ -1408,7 +1424,7 @@ footer span {
   .landing > .main-width > h1,
   nav h1,
   nav div.menu,
-  #contact form > div input[type="submit"] {
+  #contact form > div .submit {
     font-size: 18px;
   }
   .landing > .main-width > p {
@@ -1491,7 +1507,7 @@ footer span {
     margin: 6px 0;
   }
   #contact form > div input[type="text"],
-  #contact form > div input[type="submit"] {
+  #contact form > div .submit {
     height: 35px;
   }
   footer {
@@ -1502,7 +1518,7 @@ footer span {
     width: 90%;
   }
   .subscribe > label,
-  .subscribe > input {
+  .subscribe > .input {
     padding: 8px 10px;
     font-size: 14px;
   }
